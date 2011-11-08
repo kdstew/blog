@@ -1,0 +1,10 @@
+%h2= @post.title
+%p= @post.body
+%p= "last updated at #{@post.updated_at.strftime('%Y/%m/%d')}"
+%h4
+  Comments
+- @comments.each do |c|
+  = c.comment
+  %br
+=link_to 'Add comment', new_post_comment_path(@post)
+= link_to 'Home', posts_path

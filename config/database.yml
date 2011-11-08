@@ -1,0 +1,11 @@
+development:
+  host: localhost
+  user: root
+  adapter: mysql
+  database: kstest_development
+
+test:
+  host: localhost
+  user: root
+  adapter: mysql
+  database: kstest_test

@@ -1,0 +1,6 @@
+%h2 Posts
+=link_to 'New Post', new_post_path
+- @posts.each do |post|
+  %h3= link_to post.title, post_path(post), :class => 'left'
+  =link_to "Edit", edit_post_path(post), :class => 'left'
+  %br
